@@ -31,12 +31,7 @@ public class ValidateISBN {
             }
         }
 
-        if (sum % 11 == 0){
-            return true;
-        }
-        else {
-            return false;
-        }
+        return (sum % 11 == 0);
 
     }
 
@@ -65,7 +60,6 @@ public class ValidateISBN {
         }
 
         return checksum == Integer.parseInt( isbn.substring( 12 ) );
-
 
     }
 }
